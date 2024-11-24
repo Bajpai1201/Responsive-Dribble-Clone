@@ -1,0 +1,342 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: gilroy;
+}
+
+html, body{
+    height: 100%;
+    width: 100%;
+    background-color: #F8F7F4;
+}
+
+#page1{
+    height: 100%;
+    width: 100%;
+    /*background-color: rebeccapurple;*/
+}
+
+#page1 #nav{
+    height: 15vh;
+    width: 100%;
+    /*background-color: rgb(141, 187, 48);*/
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#nav-part1{
+width: 55%;
+/*background-color: rebeccapurple;*/
+display: flex;
+align-items: center;
+justify-content: space-evenly;
+gap: 1vw;
+}
+
+#nav-part1 h1{
+    font-family: satisfy;
+    font-weight: 600;
+    font-style: italic;
+    font-size: 2.5vw;
+}
+
+#nav-part1 h5{
+    font-size: 1.3vw;
+    font-weight: 500;
+}
+#nav-part2{
+    width: 35%;
+    /*background-color: orange;*/
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    gap: 1vw;
+}
+
+#nav-part2 h5{
+    font-size: 1.3vw;
+    font-weight: 500;
+}
+
+.button1{
+        padding-left: 1vw;
+        align-content: center;
+        width: 15vw;
+        height: 3.5vw;
+        background-color: #ffffff;
+        /*Green*/color: #918e8e;
+        border: none;
+        
+        font-size: 1.3vw;
+        cursor: pointer;
+        border-radius: 4vw;
+        -webkit-border-radius: 4vw;
+        -moz-border-radius: 4vw;
+        -ms-border-radius: 4vw;
+        -o-border-radius: 4vw;
+}
+
+.button2 {
+    padding-left: 2.5vw;
+    width: 9vw;
+    align-content: center;
+    height: 3.5vw;
+    background-color: #000;
+    color: #ffffff;
+    border: none;
+    border-radius: 4vw;
+    font-size: 1.3vw;
+    cursor: pointer;
+    -webkit-border-radius: 4vw;
+    -moz-border-radius: 4vw;
+    -ms-border-radius: 4vw;
+    -o-border-radius: 4vw;
+}
+
+.button2:hover{
+    background-color: #918e8e;
+}
+
+.button3 {
+    cursor: pointer;
+}
+
+/*#nav-part2 button2{
+    
+    align-items: center;
+    justify-items: center;
+    height: 3.5vw;
+    width: 6vw;
+    background-color: rgb(0, 217, 255);
+    border-radius: 4vw;
+    -webkit-border-radius: 4vw;
+    -moz-border-radius: 4vw;
+    -ms-border-radius: 4vw;
+    -o-border-radius: 4vw;
+    border: none;
+}*/
+
+#content{
+    height: calc(100% - 15vh);
+    width: 95%;
+    /*background-color: coral;*/
+    padding: 1vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    box-sizing: content-box;
+    
+}
+
+ #content .button4 {
+    
+    align-content: center;
+    height: 3.5vw;
+    width: 25vw;
+    border-radius: 4vw;
+    -webkit-border-radius: 4vw;
+    -moz-border-radius: 4vw;
+    -ms-border-radius: 4vw;
+    -o-border-radius: 4vw;
+    background-color: #F6AEE9;
+    color: #000;
+    text-align: center;
+    cursor: pointer;
+    margin: 2.3vw;
+    font-size: 1.4vw;
+    font-weight: 600;   
+}
+
+#content .button4:hover{
+    background-color: #f5df9f;
+}
+
+#content h1{
+    margin: 2.3vw;
+    font-size: 5.5vw;
+    font-weight: 500;
+    font-family: "Merriweather", serif;
+    line-height: 1vw;
+    
+}
+
+#content h3{
+    margin: 2.3vw;
+    font-size: 1.5vw;
+    font-weight: 500;
+    font-family: "Noto Sans JP", sans-serif;
+    line-height: 1vw;
+}
+#content .button5 {
+    
+    align-content: center;
+    height: 3.5vw;
+    width: 10vw;
+    border-radius: 4vw;
+    -webkit-border-radius: 4vw;
+    -moz-border-radius: 4vw;
+    -ms-border-radius: 4vw;
+    -o-border-radius: 4vw;
+    background-color: #000;
+    color: #ffffff;
+    text-align: center;
+    cursor: pointer;
+    margin: 2.3vw;
+    font-size: 1.3vw;
+    font-weight: 300;
+    line-height: 1vw;
+    
+}
+
+#content .button5:hover{
+    background-color: #565564;
+}
+
+#bottom{
+    width: 100%;
+    height: 50vh;
+    margin-top: -40px;
+    padding: 15px;
+    display: flex;
+    flex-wrap: nowrap;
+    gap: 30px;
+    overflow-x: auto;
+    overflow-y: hidden;
+}
+
+#bottom::-webkit-scrollbar{
+    display: none;
+}
+.elem{
+    flex-shrink: 0;
+    height: 100%;
+    width: 320px;
+    background-color: rebeccapurple;
+    /*border: 2px solid #000;*/
+    border-radius: 40px;
+    overflow: hidden;
+    position: relative;
+}
+
+.elem img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+.elem video{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+/*.elem .text-btm{
+    height: 30%;
+    width: 100%;
+    background-color: #000;
+    bottom: 0;
+    position: absolute;
+    color: #fff;
+}*/
+
+#page2{
+    height: 100%;
+    width: 100%;
+    /*background-color: plum;*/
+    
+}
+
+#page3{
+    height: 100%;
+    width: 100%;
+    /*background-color: #565564;*/
+    margin-top: -20vw;
+    position: relative;
+    padding: 40px;
+}
+
+#page3 h1{
+    text-align: center;
+    font-weight: 300;
+    font-size: 50px;
+    margin-bottom: 50px;
+}
+
+.box{
+    height: 270px;
+    width: 270px;
+    /*background-color: rebeccapurple;
+    */padding-top: 40px;
+    border-radius: 13px;
+    -webkit-border-radius: 13px;
+    -moz-border-radius: 13px;
+    -ms-border-radius: 13px;
+    -o-border-radius: 13px;
+    overflow: hidden;
+    display: inline-block;
+    margin: 15px;
+    position: relative;
+}
+
+.box img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    background-position: center;
+    
+    
+}
+
+.box video{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    
+    
+}
+
+.box-btm{
+    height: 40%;
+    width: 100%;
+    background: linear-gradient(transparent, rgba(0, 0, 0, 0.774));
+    position: absolute;
+    bottom: -40%;
+    transition: all ease 0.3;
+    -webkit-transition: all ease 0.3;
+    -moz-transition: all ease 0.3;
+    -ms-transition: all ease 0.3;
+    -o-transition: all ease 0.3;
+    color: #ffffff;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 20px;
+    font-size: 18px;
+}
+
+.box-btm i{
+    background-color: #ffffff;
+    padding: 8px 9px;
+    color: #000;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+}
+.box-btm h5{
+    font-size: 18px;
+    font-weight: 200;
+}
+.box:hover .box-btm{
+    bottom: 0;
+}
+
+.box:hover{
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.459);
+}
